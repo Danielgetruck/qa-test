@@ -1,0 +1,43 @@
+// פונקציות שנבדוק
+function sum(a, b) {
+  return a + b;
+}
+
+function multiply(a, b) {
+  return a * b;
+}
+
+function isEven(num) {
+  return num % 2 === 0;
+}
+
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+// קבוצת טסטים למתמטיקה בסיסית
+describe('Basic Math Operations', () => {
+  test('adds 1 + 2 to equal 3', () => {
+    expect(sum(1, 2)).toBe(3);
+  });
+
+  test('multiplies 2 * 3 to equal 6', () => {
+    expect(multiply(2, 3)).toBe(6);
+  });
+
+  test('checks if number is even', () => {
+    expect(isEven(2)).toBe(true);
+    expect(isEven(3)).toBe(false);
+  });
+});
+
+// קבוצת טסטים למניפולציות על מחרוזות
+describe('String Operations', () => {
+  test('reverses hello to equal olleh', () => {
+    expect(reverseString('hello')).toBe('olleh');
+  });
+
+  test('reverses JavaScript to equal tpircSavaJ', () => {
+    expect(reverseString('JavaScript')).toBe('tpircSavaJ');
+  });
+});
