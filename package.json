@@ -1,4 +1,16 @@
-"scripts": {
-  "test": "echo \"Test passed\" && exit 0",
-  "build": "echo \"Build completed\" && exit 0"
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "description": "QA Test Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "echo \"Build completed\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
